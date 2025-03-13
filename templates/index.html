@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCOS test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>PCOS Diagnosis Test</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <form action="/Calculate" method="POST">
+            <h3 class="question one">What is your age?</h3>
+            <input class="answer qone" type="number" id="intergerBox" name="box1" step="1">
+            <h3 class="question two">What is your BMI?</h3>
+            <input class="answer qtwo" type="number" id="intergerBox" name="box2">
+            <h3 class="question three">Do you have signs of Menstrual Irregularity?(1 for yes 0 for no)</h3>
+            <input class="answer qthree" type="number" id="intergerBox" name="box3" step="1">
+            <h3 class="question four">What is your Testosterone Level?</h3>
+            <input class="answer qfour" type="number" id="intergerBox" name="box4">
+            <h3 class="question five">What is your Antral Follicle Count?</h3>
+            <input class="answer qfive" type="number" id="intergerBox" name="box5">
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+    {% if result is not none %}
+        <h2>Results: </h2>
+    {% endif %}
+
+    {% if error %}
+        <p style="color:red;">{{error}}</p>
+    {% endif %}
+</body>
+</html>

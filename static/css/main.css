@@ -1,0 +1,122 @@
+/* Gobal */
+* {
+    box-sizing: border-box;
+}
+
+html{
+    background-color: rgb(129, 168, 168);
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 14;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 18;
+    font-weight: bolder;
+}
+
+/* index.html */
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 180, 180);
+
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 180, 180);
+
+    height: 65%;
+    width: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+}
+
+
+
+.hide{
+    display: none;
+}
+
+.next{
+    display: flex;
+    position: absolute;
+
+    top: 75%;
+    color: black;
+    padding: 3px;
+}
+
+
+
+.question{
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.answer{
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.one{
+    top: 0%;
+}
+.qone{
+    top: 10%;
+}
+
+.two{
+    top: 15%;
+}
+
+.qtwo{
+    top: 25%;
+}
+
+
+.three{
+    top:30%;
+    font-size: 5;
+}
+
+.qthree{
+    top:45%;
+}
+
+.four{
+    top: 50%;
+}
+
+.qfour{
+    top: 65%;
+}
+
+.five{
+    top: 70%;
+}
+
+.qfive{
+    top: 85%;
+}
+
+.submit{
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    top: 95%;
+}
