@@ -1,6 +1,6 @@
 PCOS Prediction using Logistic Regression
 Description
-This project implements a logistic regression model to predict the likelihood of Polycystic Ovary Syndrome (PCOS) based on input features from a dataset. The model is trained using gradient descent and evaluated on a test dataset.
+This project implements a logistic regression model to predict the likelihood of Polycystic Ovary Syndrome (PCOS) based on input features from a dataset. The model is trained using gradient descent and evaluated on a test dataset. There is also a website for it but the connection with flask currently isn't working.
 
 Features
 Reads and processes a dataset (pcos_dataset.csv)
